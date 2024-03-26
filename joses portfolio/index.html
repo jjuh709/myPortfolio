@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>My Portfolio</h1>
+        <nav>
+            <img src="jem.jpg" alt="Logo" class="logo">
+        
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>👨‍💻 A Passionate Programmer: Ever since I typed my first "Hello, World!" I've been hooked on the magic of coding. It's not just a job for me; it's a creative outlet, a puzzle to solve, and a way of shaping the future.
+
+            🌟 A Lifelong Learner: The tech world moves at warp speed, and I'm always up for the challenge of learning something new. Whether it's mastering a new language, diving into the latest framework, or exploring cutting-edge technologies, I'm all in!
+            Enough about me! I'd love to hear your story and chat about all things tech. Whether you're a seasoned developer, a curious newbie, or anyone in between, don't be shy—reach out, and let's nerd out together! 🚀</p>
+    </section>
+    <section id="projects">
+        <h2>Projects</h2>
+        <div id="project-list">
+            <!-- JavaScript will populate projects here -->
+        </div>
+    </section>
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: jnjugunam8@gmail.com</p>
+        <p>Contact +254718779438
+        </p>
+    </section>
+    <section id="rating">
+        <h2>Rate My Projects</h2>
+        <form id="rating-form">
+            <label for="project-select">Select a Project:</label>
+            <select id="project-select" name="project">
+                <!-- Options for projects will be dynamically populated by JavaScript -->
+            </select>
+            <label for="rating">Rating:</label>
+            <input type="number" id="rating" name="rating" min="1" max="5" required>
+            <label for="comments">Comments (optional):</label>
+            <textarea id="comments" name="comments" rows="4"></textarea>
+            <button type="submit">Submit Rating</button>
+        </form>
+    </section>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const projects = [
+                {
+                    name: 'QUEHELP_ONLINE_VIRTUAL',
+                    description: 'This is is a software that converts Natural languge recognition into machine understandable language.',
+                    imageUrl: 'project1.jpg',
+                    githubLink: 'https://github.com/jose23/POT',
+                    demoLink: 'https://demo.project1.com'
+                },
+                {
+                    name: 'Project 2',
+                    description: 'Description of project 2.',
+                    imageUrl: 'project2.jpg',
+                    githubLink: 'https://github.com/username/project2',
+                    demoLink: 'https://demo.project2.com'
+                },
+                // Add more projects as needed
+                {
+                    name: 'Project 3',
+                    description: 'Description of project 2.',
+                    imageUrl: 'project2.jpg',
+                    githubLink: 'https://github.com/username/project2',
+                    demoLink: 'https://demo.project3.com'
+                },
+                {
+                    name: 'Project 4',
+                    description: 'Description of project 2.',
+                    imageUrl: 'project2.jpg',
+                    githubLink: 'https://github.com/username/project2',
+                    demoLink: 'https://demo.project4.com'
+                },
+                {
+                    name: 'Project 5',
+                    description: 'Description of project 2.',
+                    imageUrl: 'project2.jpg',
+                    githubLink: 'https://github.com/username/project2',
+                    demoLink: 'https://demo.project5.com'
+                },
+                {
+                    name: 'Project 6',
+                    description: 'Description of project 2.',
+                    imageUrl: 'project2.jpg',
+                    githubLink: 'https://github.com/username/project2',
+                    demoLink: 'https://demo.project2.com'
+                },
+                {
+                    name: 'Project 7',
+                    description: 'Description of project 2.',
+                    imageUrl: 'project2.jpg',
+                    githubLink: 'https://github.com/username/project2',
+                    demoLink: 'https://demo.project2.com'
+                },
+                {
+                    name: 'Project 8',
+                    description: 'Description of project 2.',
+                    imageUrl: 'project2.jpg',
+                    githubLink: 'https://github.com/username/project2',
+                    demoLink: 'https://demo.project2.com'
+                },
+                {
+                    name: 'Project 9',
+                    description: 'Description of project 2.',
+                    imageUrl: 'project2.jpg',
+                    githubLink: 'https://github.com/username/project2',
+                    demoLink: 'https://demo.project2.com'
+                },
+                {
+                    name: 'Project 10',
+                    description: 'Description of project 2.',
+                    imageUrl: 'project2.jpg',
+                    githubLink: 'https://github.com/username/project2',
+                    demoLink: 'https://demo.project2.com'
+                },
+                {
+                    name: 'Project 11',
+                    description: 'Description of project 2.',
+                    imageUrl: 'project2.jpg',
+                    githubLink: 'https://github.com/username/project2',
+                    demoLink: 'https://demo.project2.com'
+                },
+                {
+                    name: 'Project 12',
+                    description: 'Description of project 2.',
+                    imageUrl: 'project2.jpg',
+                    githubLink: 'https://github.com/username/project2',
+                    demoLink: 'https://demo.project2.com'
+                },
+                {
+                    name: 'Project 13',
+                    description: 'Description of project 2.',
+                    imageUrl: 'project2.jpg',
+                    githubLink: 'https://github.com/username/project2',
+                    demoLink: 'https://demo.project2.com'
+                },
+                {
+                    name: 'Project 14',
+                    description: 'Description of project 2.',
+                    imageUrl: 'project2.jpg',
+                    githubLink: 'https://github.com/username/project2',
+                    demoLink: 'https://demo.project2.com'
+                },
+                {
+                    name: 'Project 15',
+                    description: 'Description of project 2.',
+                    imageUrl: 'project2.jpg',
+                    githubLink: 'https://github.com/username/project2',
+                    demoLink: 'https://demo.project2.com'
+                },
+            ];
+
+            const projectList = document.getElementById('project-list');
+
+            projects.forEach(project => {
+                const projectElement = document.createElement('div');
+                projectElement.classList.add('project');
+                projectElement.innerHTML = `
+                    <h3>${project.name}</h3>
+                    <p>${project.description}</p>
+                    <img src="${project.imageUrl}" alt="${project.name}">
+                    <p>
+                        <a href="${project.githubLink}" target="_blank">GitHub</a>
+                        <a href="${project.demoLink}" target="_blank">Demo</a>
+                    </p>
+                `;
+                projectList.appendChild(projectElement);
+            });
+        });
+        document.addEventListener('DOMContentLoaded', function() {
+    // Existing projects data
+    const projects = [
+        { name: 'Project 1', description: 'Description of project 1.' },
+        { name: 'Project 2', description: 'Description of project 2.' },
+        { name: 'Project 3', description: 'Description of project 3.' }
+    ];
+
+    // Populate project options in the form select element
+    const projectSelect = document.getElementById('project-select');
+    projects.forEach((project, index) => {
+        const option = document.createElement('option');
+        option.value = index; // You can use a unique identifier for each project if needed
+        option.text = project.name;
+        projectSelect.appendChild(option);
+    });
+
+    // Handle form submission
+    const ratingForm = document.getElementById('rating-form');
+    ratingForm.addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent form submission
+
+        // Get form data
+        const projectId = projectSelect.value;
+        const rating = document.getElementById('rating').value;
+        const comments = document.getElementById('comments').value;
+
+        // You can handle the form data here (e.g., send it to a backend server)
+
+        // Reset form fields
+        ratingForm.reset();
+    });
+});
+
+
+    </script>
+    <section id="certifications">
+        <h2>Certifications</h2>
+        <div class="certification">
+            <h3>Google annalytics individul.</h3>
+            <p>This certification covers data annalytics and administration, including setup, configuration.</p>
+            <p>Date: January 2023</p>
+            <img src="virtual_machine_image.jpg" alt="Virtual Machine" class="certification-image">
+        </div>
+        <!-- Add more certifications as needed -->
+    </section>
+    
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h3>About Me</h3>
+                <p>🎨 A Creative Problem Solver: Coding isn't just about zeros and ones; it's about finding elegant solutions to real-world problems. I love flexing my creative muscles 
+                    to craft solutions that not only work but also inspire.</p>
+            </div>
+            <div class="footer-section contact">
+                <h3>Contact Me</h3>
+                <p>Email: jnjugunam8@gmail.com</p>
+                <ul class="social-links">
+                    <li><a href="#" target="_blank">Twitter</a></li>
+                    <li><a href="#" target="_blank">LinkedIn</a></li>
+                    <!-- Add more social media links as needed -->
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2024 My Portfolio | Designed by [Mwangi Njuguna]
+        </div>
+    </footer>
+    
+</body>
+
+</html>

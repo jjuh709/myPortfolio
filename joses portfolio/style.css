@@ -1,0 +1,234 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 30px; /* Align items vertically */
+}
+
+.logo {
+    width: 80px; /* Increase the size of the logo */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 20px;
+    border-radius: 50%;
+}
+h1 {
+    font-size: 36px; /* Increase the font size of the title */
+    margin: 0;
+    font-weight: bold; /* Make the title bold */
+}
+nav {
+    flex-grow: 1; /* Allow navigation links to take up remaining space */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end; /* Align navigation links to the right */
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0; /* Remove margin from last navigation link */
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease; /* Add smooth color transition */
+}
+
+nav ul li a:hover {
+    color: #ff8c00; /* Change color on hover */
+}
+
+section {
+    padding: 20px;
+}
+
+#projects {
+    background-color: #f4f4f4;
+}
+
+#project-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+}
+
+.project {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+/* Projects Section */
+#projects {
+    padding: 40px 0;
+    background-color: #f4f4f4;
+}
+
+.project {
+    border: 1px solid #ccc;
+    padding: 20px;
+    transition: background-color 0.3s ease; /* Smooth transition effect */
+}
+
+.project:hover {
+    background-color: #e0e0e0; /* Change background color on hover */
+}
+
+/* Rating Section */
+#rating {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+
+#rating h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+#rating-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#rating-form select,
+#rating-form input[type="number"],
+#rating-form textarea {
+    width: calc(100% - 20px); /* Take up 100% width minus padding */
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#rating-form textarea {
+    resize: vertical; /* Allow vertical resizing */
+}
+
+#rating-form button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#rating-form button:hover {
+    background-color: #45a049;
+}
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 0;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Allow content to wrap on smaller screens */
+}
+
+.footer-section {
+    width: 45%;
+}
+
+.footer-section.about h3,
+.footer-section.contact h3 {
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.footer-section p {
+    color: #ccc;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.footer-section.contact ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section.contact ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.footer-section.contact ul li:last-child {
+    margin-right: 0;
+}
+
+.footer-section.contact ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #ccc;
+}
+/* Certification Section */
+#certifications {
+    padding: 40px 0;
+    background-color: #f9f9f9;
+}
+
+#certifications h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.certification {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.certification h3 {
+    color: #333;
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.certification p {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.certification img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 20px;
+}
